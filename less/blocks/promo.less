@@ -9,7 +9,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 775px;
+  width: 775px;
+  max-width: 100%;
   color: #fff;
   text-align: center;
   letter-spacing: 0.05em;
@@ -25,17 +26,19 @@
   .promo__title {
     max-width: 100%;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 80px;
     font-weight: 700;
     text-shadow: none;
+    letter-spacing: 0.05em;
   }
 }
 
 .promo__slide {
   position: relative;
   z-index: 1;
-  min-height: 695px;
+  min-height: 692px;
+  box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,11 +58,11 @@
 .promo__btn {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .promo__pagination {
-  bottom: 25px !important;
+  bottom: 20px !important;
 }
 
 .swiper-pagination-bullet {
