@@ -1,0 +1,21 @@
+.title {
+  position: relative;
+  padding-bottom: 95px;
+  margin-bottom: 55px;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 348px;
+    height: 51px;
+    background-image: url(../img/images/deco.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
