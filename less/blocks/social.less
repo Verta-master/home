@@ -1,0 +1,29 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 35px;
+  background-color: rgb(240, 240, 240);
+  transform: rotate(45deg);
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: rgba(240, 240, 240, 0.5);
+    .transition();
+  }
+}
+
+.social__link {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+}
