@@ -466,6 +466,9 @@ button {
 .columns__content {
   width: calc(100% - 300px);
 }
+.modal {
+  padding: 0;
+}
 .header {
   padding-top: 12px;
   padding-bottom: 13px;
@@ -1206,6 +1209,41 @@ a.menu__contact:active span::after {
   height: 50px;
   margin-top: 45px;
   font-size: 24px;
+}
+.order__comment {
+  font-size: 16px;
+  text-align: center;
+}
+.order__comment a {
+  text-decoration: underline;
+}
+.order__comment a:hover,
+.order__comment a:active {
+  text-decoration: none;
+}
+.order__check {
+  display: none;
+}
+.order__label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+}
+.order__label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  font-style: 20px;
+  line-height: 1;
+  text-align: center;
+  border: 1px solid #59534c;
+}
+.order__check:checked + .order__label::before {
+  content: "\2714";
 }
 .social {
   margin: 0;
