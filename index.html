@@ -6,6 +6,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Стиль вашего дома</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
           <span>Производство</span>
           <a href="tel:+79160144577">8 916 014 45 77</a>
         </div>
-        <a href="#" class="btn header__call">Заказать звонок</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="btn header__call">Заказать звонок</a>
       </div>
     </div>
   </header>
@@ -293,9 +294,25 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <div class="order">
+      <p class="order__title">Оставьте ваши имя и номер,<br>и мы ответим на все интересующие<br>вас вопросы!</p>
+      <form action="#" class="order__form">
+        <input type="text" class="order__input" placeholder="Имя">
+        <input type="text" class="order__input" placeholder="Номер">
+        <input type="checkbox" id="check" class="order__check" checked>
+        <label for="check" class="order__label">Я не робот</label>
+        <button type="submit" class="btn btn--brown order__btn">Заказать звонок</button>
+        <p class="order__comment">Принимаю условия <a href="#">пользовательского соглашения</a></p>
+      </form>
+    </div>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
   <!-- Slider -->
   <script>

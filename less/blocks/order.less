@@ -38,3 +38,45 @@
   margin-top: 45px;
   font-size: 24px;
 }
+
+.order__comment {
+  font-size: 16px;
+  text-align: center;
+  
+  a {
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.order__check {
+  display: none;
+}
+
+.order__label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    font-style: 20px;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid rgb(89, 83, 76);
+  }
+}
+
+.order__check:checked + .order__label::before {
+  content: "\2714";
+}
