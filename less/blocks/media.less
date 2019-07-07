@@ -14,6 +14,7 @@
 
 //--------------------------------------------------------
 @media (max-width: 1230px) {
+  .card__info,
   .wrapper {
     width: 100%;
     padding-left: 15px;
@@ -27,6 +28,13 @@
   }
   .product__item {
     margin-right: 0;
+  }
+  .card__wrap {
+    display: block;
+  }
+  .card__view {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -207,6 +215,45 @@
   }
   .benefits {
     padding-bottom: 40px;
+  }
+}
+
+//--------------------------------------------------------
+@media (max-width: 630px) {
+  .card__view {
+    width: 290px;
+  }
+  .card__slide {
+    height: 270px;
+  }
+  .card {
+    padding-top: 0;
+    margin-bottom: 100px;
+  }
+  .gallery-top {
+    height: auto;
+  }
+  .card__thumbs {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .card__next {
+    right: 0;
+  } 
+  .card__prev {
+    left: 0;
+  }
+  .title-3 {
+    font-size: 30px;
+  }
+  .card__line {
+    font-size: 20px;
+  }
+  .card__btns {
+    flex-direction: column;
+  }
+  .card__price {
+    margin-bottom: 20px;
   }
 }
 
