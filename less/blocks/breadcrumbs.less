@@ -1,0 +1,32 @@
+.breadcrumbs {
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+
+.breadcrumbs__link {
+  margin-right: 3px;
+  font-size: 19px;
+  letter-spacing: 0.05em;
+}
+
+a.breadcrumbs__link {
+  color: #4c4c4c;
+  
+  &::after {
+    content: "/";
+    margin-left: 5px;
+  }
+  
+  &:hover,
+  &:active {
+    color: #bfbdbd;
+    
+    &::after {
+      color: #4c4c4c;
+    }
+  }
+}
+
+span.breadcrumbs__link {
+  color: #bfbdbd;
+}
